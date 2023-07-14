@@ -8,9 +8,20 @@ The firmware is written in C++ using Visual Studio Code, and the synth functions
 
 _Oscillators -> ADSR envelope -> Filter -> Chorus -> Reverb_
 
-The synth parameters are set using potentiometers read via the A/D inputs of the Daisy Seed. 
+The synth parameters are set using potentiometers read via the A/D inputs of the Daisy Seed. Controllable parameters on this prototype are:
+- Oscillator A waveshape
+- Oscillator B waveshape
+- Oscillator A/B mix
+- Filter cutoff
+- Attack/Decay mix
+- Dry/Reverb mix
+- Chorus Rate
+- Chorus Depth
 
 ## The SoftPot
+The SoftPot is the SP-L-500-203-ST made by Spectra Symbol. It is available from several sources, including Sparkfun and Digikey. The SoftPot is driven by a constant current (rather than the usual constant voltage), which enables the detection of the position of 2 simultaneous presses by measuring the voltage at the supply terminal as well as the wiper terminal. This in turn should allow the firmware to provide the player with the ability to do hammer-ons and pull-offs and make the synth more 'guitarlike'.
+
+## The Touch Sensors
 
 ## Acknowledgements
 Thanks to YouTuber gr4yhound for the inspiration behind this project, check out his video https://www.youtube.com/watch?v=s3dBox-LB7I
