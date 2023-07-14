@@ -26,7 +26,7 @@ The firmware implements an exponential correction of the pitch resistance of the
 The touch sensors are W7ED-11F made by Omron, available from Digikey. They are open collector output, and connected directly to digital inputs on the Daisy. oThey are active low when touched. They require a an external conductive electrode, I used scraps of single sided PCB material.
 
 ## Construction
-Since this is a highly experimental prototype, functionality has been prioritised over asthetics or durability. Apart from the electronics, it has been built out of scrap wood, nails and screws, cable ties and a plastic enclosure I had lying around. The instrument is powered by a 12V SLA battery that feeds a 5V switchmode module, which in turn powers the Daisy Seed. The potentiometers are supplied by the 3.3V output on the Seed.
+Since this is a highly experimental prototype, functionality has been prioritised over asthetics or durability. Apart from the electronics, it has been built out of scrap wood, nails and screws, cable ties and a plastic enclosure I had lying around. The instrument is powered by a 12V 1.2Ah SLA battery that feeds a 5V switchmode module, which in turn powers the Daisy Seed. The potentiometers are supplied by the 3.3V output on the Seed. The instrument has a 1/4" jack that allows connection to a guitar amp using a standard instrument cable.
 
 ## Current Status
 I am currently working on implementing the two-touch detection. After that I would like to have the volume increase with slide velocity as shown here: https://www.youtube.com/watch?v=fh7W3UtsQkw-
