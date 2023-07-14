@@ -22,6 +22,9 @@ The synth parameters are set using potentiometers read via the A/D inputs of the
 The SoftPot is the SP-L-500-203-ST made by Spectra Symbol. It is available from several sources, including Sparkfun and Digikey. The SoftPot is driven by a constant current (rather than the usual constant voltage), which enables the detection of the position of 2 simultaneous presses by measuring the voltage at the supply terminal as well as the wiper terminal. This in turn should allow the firmware to provide the player with the ability to do hammer-ons and pull-offs and make the synth more 'guitarlike'.
 
 ## The Touch Sensors
+The touch sensors are W7ED-11F made by Omron, available from Digikey. They are open collector output, and connected directly to digital inputs on the Daisy. oThey are active low when touched. They require a an external conductive electrode, I used scraps of single sided PCB material.
+
+## Construction
 
 ## Acknowledgements
 Thanks to YouTuber gr4yhound for the inspiration behind this project, check out his video https://www.youtube.com/watch?v=s3dBox-LB7I
