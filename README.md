@@ -20,12 +20,17 @@ The synth parameters are set using potentiometers read via the A/D inputs of the
 
 ## The SoftPot
 The SoftPot is the SP-L-500-203-ST made by Spectra Symbol. It is available from several sources, including Sparkfun and Digikey. The SoftPot is driven by a constant current (rather than the usual constant voltage), which enables the detection of the position of 2 simultaneous presses by measuring the voltage at the supply terminal as well as the wiper terminal. This in turn should allow the firmware to provide the player with the ability to do hammer-ons and pull-offs and make the synth more 'guitarlike'.
+The firmware implements an exponential correction of the pitch resistance of the SoftPot so that the semitones are evenly spaced on the 'neck'. This differs from a conventional guitar neck that has the semitones move closer together as they increase in pitch.
 
 ## The Touch Sensors
 The touch sensors are W7ED-11F made by Omron, available from Digikey. They are open collector output, and connected directly to digital inputs on the Daisy. oThey are active low when touched. They require a an external conductive electrode, I used scraps of single sided PCB material.
 
 ## Construction
+Since this is a highly experimental prototype, functionality has been prioritised over asthetics or durability. Apart from the electronics, it has been built out of scrap wood, nails and screws, cable ties and a plastic enclosure I had lying around. The instrument is powered by a 12V SLA battery that feeds a 5V switchmode module, which in turn powers the Daisy Seed. The potentiometers are supplied by the 3.3V output on the Seed.
+
+## Current Status
+I am currently working on implementing the two-touch detection. After that I would like to have the volume increase with slide velocity as shown here: https://www.youtube.com/watch?v=fh7W3UtsQkw-
 
 ## Acknowledgements
-Thanks to YouTuber gr4yhound for the inspiration behind this project, check out his video https://www.youtube.com/watch?v=s3dBox-LB7I
+Thanks to YouTuber gr4yhound for the inspiration behind this project, check out his video https://www.youtube.com/watch?v=s3dBox-LB7I .
 Also thanks to donnerbono for his synth code (https://github.com/donnerbono/bitsandbobs/tree/main/DuoPolySynth%20v1) which enabled me to get the basic synth architecture up and working reasonably quickly.
